@@ -1,0 +1,8 @@
+- company: string, company name
+- address: string, company address
+- date: string, purchase date
+- items: list of objects, each object contains each item information
+    - item_desc: string, item description
+    - item_qty: string, item quantity, should only be a number
+    - item_price: string, price of item, should include currency unit (if possible)
+- total_paid: string

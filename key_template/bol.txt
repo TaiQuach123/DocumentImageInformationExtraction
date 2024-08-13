@@ -1,0 +1,12 @@
+- bol_no: string, the bill of lading number
+- carrier: string, the carrier party name
+- consignee: an object, contains information about consignee
+	- party_name: string, the party name of consignee
+	- location: string, the location of consignee
+- shipper: an object, contains information about shipper
+	- party_name: string, the party name of consignee
+	- location: string, the location of consignee
+- port_of_loading: string
+- port_of_discharge: string
+- vessel: string, the vessel name
+- voyage_no: string, the voyage number (usually related to the vessel)

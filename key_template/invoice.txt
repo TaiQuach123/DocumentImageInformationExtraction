@@ -1,0 +1,21 @@
+- header: an object, contains information about the header of the invoice
+	- invoice_no: string, the invoice number
+	- invoice_date: string, invoice date
+	- seller: string, seller's name
+	- seller_location: string
+	- client: string, client's name
+	- client_location: string
+	- seller_tax_id: string
+	- client_tax_id: string
+	- iban: string
+- items: list of objects, contains information about items
+	- item_desc: string, item's description
+	- item_qty: string, item's quantity
+	- item_net_price: string, item's net price
+	- item_net_worth:string, item's net worth
+	- item_vat: string, item's VAT
+	- item_gross_worth: string, item's gross worth
+- summary: an object, contains summary of the invoice
+	- total_net_worth: string
+	- total_vat:string
+	- total_gross_worth: string

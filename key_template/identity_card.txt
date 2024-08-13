@@ -1,0 +1,7 @@
+- identity_number: string
+- full_name: string
+- date_of_birth: string
+- sex: string
+- nationality: string
+- place_of_origin: string
+- place_of_residence: string
