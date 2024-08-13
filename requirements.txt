@@ -1,0 +1,20 @@
+#black # Python formatter
+numpy
+pdf2image #check
+typed-argument-parser #check
+
+google-generativeai #check
+gradio
+gradio-pdf
+regex
+#anls_star #evaluate 
+langchain
+pillow==9.4.0 #check
+python-dotenv #check
+opencv-python #check
+transformers==4.42.4 #check
+pydantic-settings #check
+ftfy #check
+pypdfium2 #check
+
+#pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121

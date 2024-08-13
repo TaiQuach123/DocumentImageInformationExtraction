@@ -1,0 +1,19 @@
+- full_name: string, the candidate's full name
+- contact_info: object, the contact information of the candidate
+	- gmail: string, candidate's gmail
+	- linkedIn: string, candidate's linkedIn link
+	- github: string, candidate's GitHub link
+	- phone_number: string, candidate's phone number
+- education: list of objects, describe candidate's education
+	- university_name: string, name of candidate's university
+	- major: string, their major in university
+	- degree: string, the degree of education
+	-GPA/CPA: string, their GPA/CPA
+- projects: list of objects, describe candidate's projects
+	- proj_name: string, name of the project
+- experiences: list of objects, describe candidate's experiences
+	- title: string, the title 
+	- party_name: string, the party that candidate works for
+- achievements/awards: list of objects, describe candidate's achievements/awards
+	- title: string, title of achievements/awards
+- english: string, english's certification
