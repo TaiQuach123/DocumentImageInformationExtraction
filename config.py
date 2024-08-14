@@ -61,7 +61,7 @@ You need to extract information and return the result in json format with the fo
 KEYS:
 {keys}.
 
-Utilizing the OCR results to determine the bounding box coordinate and number of page for each piece of information. Information, bounding box coordinate and the page number must be separated by "||".
-Example for a key-value pair: "some_key": "some piece of information || [bounding box coordinate] || I".
 You MUST extract information based on the given keys, DO NOT add any other keys.
+Utilizing the OCR results to determine the bounding box coordinate and number of page for each piece of information. Information, bounding box coordinate and the page number must be separated by "||".
+Example for a key-value pair: "some_key": "some piece of information||[bounding box coordinate]||i".
 """

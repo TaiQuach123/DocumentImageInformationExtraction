@@ -20,11 +20,11 @@ print("Finish Loading Models")
 class ArgumentParser(Tap):
     file_path: str = "test_imgs/test_receipt.jpg" #Path to the input file
     output_dir_path: str = "output" #Path to the output directory
-    use_ocr: bool = False #Use information from OCR or not
+    use_ocr: bool = True #Use information from OCR or not
     use_latin: bool = True
-    use_visualize: bool = False
+    use_visualize: bool = True
     keys: str = "key_template/receipt.txt" #txt file describe desired output (keys that we want to extract)
-    save_json_path: str = "result.json"
+    save_json_path: str = "running/output.json"
 
 
 
@@ -59,7 +59,8 @@ def visualize_main(args):
         prompt = non_ocr_template.format(keys=keys)
 
     response = make_request_with_retry(llm, imgs_list=images, prompt=prompt, max_attempts=3)
-
+    temp_dict = json.loads(response[8:-4])
+    #print(temp_dict)
     dic = {}
     imgs = [np.array(img) for img in images]
 
@@ -83,7 +84,7 @@ def visualize_main(args):
                 json.dump(dic, f, ensure_ascii=False)
         except:
             print("Convert to JSON fails")
-            print(response[8:-4])       
+            #print(response[8:-4])       
     
 
 
