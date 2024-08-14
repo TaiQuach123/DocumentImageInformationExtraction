@@ -31,7 +31,7 @@ def visualize(imgs, temp_dict):
             x0, y0, x1, y1 = bbox_coordinate
             idx = int(temp_dict[key].split('||')[2].strip())
             cv2.rectangle(imgs[idx-1], (int(x0), int(y0)), (int(x1), int(y1)), (0,255,0), 2)
-            cv2.putText(imgs[idx-1], title, (int(x0), int(y0)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1)
+            cv2.putText(imgs[idx-1], title, (int(x0), int(y0)), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255,0,0), 2)
             
 
     return result_dct, imgs
