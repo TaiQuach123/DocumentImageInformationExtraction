@@ -1,21 +1,16 @@
-#black # Python formatter
 numpy
-pdf2image #check
-typed-argument-parser #check
-
-google-generativeai #check
+pdf2image 
+typed-argument-parser
+google-generativeai 
 gradio
 gradio-pdf
 regex
-#anls_star #evaluate 
 langchain
-#pillow==9.4.0 #check
 pillow
-python-dotenv #check
-opencv-python #check
-transformers==4.42.4 #check
-pydantic-settings #check
-ftfy #check
-pypdfium2 #check
-
+python-dotenv 
+opencv-python 
+transformers==4.42.4 
+pydantic-settings 
+ftfy 
+pypdfium2
 #pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
