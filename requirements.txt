@@ -9,7 +9,8 @@ gradio-pdf
 regex
 #anls_star #evaluate 
 langchain
-pillow==9.4.0 #check
+#pillow==9.4.0 #check
+pillow
 python-dotenv #check
 opencv-python #check
 transformers==4.42.4 #check
