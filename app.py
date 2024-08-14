@@ -3,6 +3,7 @@ from gradio_pdf import PDF
 from PIL import Image
 import os 
 import json
+from utils import resize_image_with_ratio
 import torch
 from main import ArgumentParser, visualize_main
 
@@ -38,7 +39,7 @@ def run(file_path, key_template, output_dir, save_json_path, use_ocr, use_visual
 
     _, imgs = visualize_main(args)
 
-    imgs_list = [Image.fromarray(img) for img in imgs]
+    imgs_list = [resize_image_with_ratio(Image.fromarray(img)) for img in imgs]
     if len(imgs_list) > 1:
         imgs_list[0].save('running/convert.pdf', save_all=True, append_images=imgs_list[1:])
     else:
