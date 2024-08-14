@@ -18,6 +18,8 @@ non_ocr_template = """Given an image or a list of images, you need to extract in
 
 KEYS:
 {keys}.
+
+You MUST extract information based on the given keys, DO NOT add any other keys.
 """
 
 
@@ -31,6 +33,7 @@ KEYS:
 {keys}.
 
 Note that you can utilize OCR results to provide better result, but this is only optional, not obligatory.
+You MUST extract information based on the given keys, DO NOT add any other keys.
 """
 
 
@@ -44,6 +47,7 @@ KEYS:
 {keys}.
 
 Note that you can utilize OCR results to provide better result, but this is only optional, not obligatory.
+You MUST extract information based on the given keys, DO NOT add any other keys.
 """
 
 
@@ -58,5 +62,6 @@ KEYS:
 {keys}.
 
 Utilizing the OCR results to determine the bounding box coordinate and number of page for each piece of information. Information, bounding box coordinate and the page number must be separated by "||".
-Example for a key-value pair: "some_key": "some piece of information || [bounding box coordinate] || i".
+Example for a key-value pair: "some_key": "some piece of information || [bounding box coordinate] || I".
+You MUST extract information based on the given keys, DO NOT add any other keys.
 """
